@@ -4240,6 +4240,11 @@ hoek@4.x.x:
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.2.1.tgz#9634502aa12c445dd5a7c5734b572bb8738aacbb"
   integrity sha512-QLg82fGkfnJ/4iy1xZ81/9SIJiq1NGFUMGs6ParyjBZr6jW2Ufj/snDqTHixNlHdPNwN2RLVD0Pi3igeK9+JfA==
 
+hoist-non-react-statics@^2.5.0:
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
+  integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
+
 home-or-tmp@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/home-or-tmp/-/home-or-tmp-2.0.0.tgz#e36c3f2d2cae7d746a857e38d18d5f32a7882db8"
@@ -6058,6 +6063,24 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@
   dependencies:
     minimist "0.0.8"
 
+mobx-react@^5.2.8:
+  version "5.2.8"
+  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-5.2.8.tgz#059c7f29254d7cd36e103d79113103b40348d3bf"
+  integrity sha512-VAkeqkrIpdoy3VPPoqvxjdQmcTT6hi7i3TsZSwcKbSrPbSTuWc7cp1EOiX/zV1wPWEuoNAQ22bCrskQwvdYTJA==
+  dependencies:
+    hoist-non-react-statics "^2.5.0"
+    react-lifecycles-compat "^3.0.2"
+
+mobx-state-tree@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/mobx-state-tree/-/mobx-state-tree-3.5.0.tgz#13167e0356838657de0b1df860be2d3a5147e54c"
+  integrity sha512-xUUHiFNDyFvzknRWX0QZAzhZcDgJXZHGRJqXU0gPVap2LyD7DL5KkerH1F/Ga5dfVn0qTFeQnoXQ59uHSkA2Yw==
+
+mobx@^5.5.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-5.5.0.tgz#a29f6a7526eed28edcd3f0e921a1edaa8bb22575"
+  integrity sha512-rD0Hsv9XtjS6axavvPX/XzWTeICRiH3bLR1L+MrJ7HOlx1hmSdWNzu8rQQ+1IkTiyJechRyGzs2tUgLRmEofJg==
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -7696,7 +7719,7 @@ react-dev-utils@^6.0.3:
     strip-ansi "4.0.0"
     text-table "0.2.0"
 
-react-dom@16.5.2:
+react-dom@^16.5.2:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.2.tgz#b69ee47aa20bab5327b2b9d7c1fe2a30f2cfa9d7"
   integrity sha512-RC8LDw8feuZOHVgzEf7f+cxBr/DnKdqp56VU0lAs1f4UfKc4cU8wU4fTq/mgnvynLQo8OtlPC19NUFh/zjZPuA==
@@ -7710,6 +7733,11 @@ react-error-overlay@^5.0.3:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.0.3.tgz#6eae9350144f3cd036e4f968c5a8bfae542af562"
   integrity sha512-TLMcjJcNy7BalEHN1iNuIK0E6ODYgExcrdaKraT4kzKVztkrBHI1THTAn3qx7GVvtP4TbCqi+mBjsZqoWtuiEQ==
+
+react-lifecycles-compat@^3.0.2:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
+  integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
 react-scripts@2.0.3:
   version "2.0.3"
@@ -7765,7 +7793,7 @@ react-scripts@2.0.3:
   optionalDependencies:
     fsevents "1.2.4"
 
-react@16.5.2:
+react@^16.5.2:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.5.2.tgz#19f6b444ed139baa45609eee6dc3d318b3895d42"
   integrity sha512-FDCSVd3DjVTmbEAjUNX6FgfAmQ+ypJfHUsqUJOYNCBUp1h8lqmtC+0mXJ+JjsWx4KAVTkk1vKd1hLQPvEviSuw==
